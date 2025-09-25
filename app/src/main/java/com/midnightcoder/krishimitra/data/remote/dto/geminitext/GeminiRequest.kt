@@ -1,4 +1,4 @@
-package com.midnightcoder.krishimitra.data.remote.dto
+package com.midnightcoder.krishimitra.data.remote.dto.geminitext
 
 data class GeminiRequest(
     val contents: List<GeminiContent>

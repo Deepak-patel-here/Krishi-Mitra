@@ -1,9 +1,10 @@
 package com.midnightcoder.krishimitra.data.remote.repoimpl
 
-import com.midnightcoder.krishimitra.data.remote.dto.GeminiContent
-import com.midnightcoder.krishimitra.data.remote.dto.GeminiPart
-import com.midnightcoder.krishimitra.data.remote.dto.GeminiRequest
+import com.midnightcoder.krishimitra.data.remote.dto.geminitext.GeminiContent
+import com.midnightcoder.krishimitra.data.remote.dto.geminitext.GeminiPart
+import com.midnightcoder.krishimitra.data.remote.dto.geminitext.GeminiRequest
 import com.midnightcoder.krishimitra.data.remote.service.ChatService
+import com.midnightcoder.krishimitra.domain.constant.apiKey
 import com.midnightcoder.krishimitra.domain.repository.ChatRepository
 import javax.inject.Inject
 
@@ -36,7 +37,7 @@ class ChatRepositoryImpl @Inject constructor(private val chatService: ChatServic
 
         return chatService.generateContent(
             request = geminiRequest,
-            apiKey = ""
+            apiKey = apiKey
         ).candidates[0].content.parts[0].text.toString()
     }
 

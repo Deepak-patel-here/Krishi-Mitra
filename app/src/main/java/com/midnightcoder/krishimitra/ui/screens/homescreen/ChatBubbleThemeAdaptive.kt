@@ -50,12 +50,14 @@ fun ChatBubbleThemeAdaptive(message: ChatMessage, bitmap: Bitmap? = null) {
                         )
                         Spacer(Modifier.height(7.dp))
                     }
+
                     Text(
                         text = formatAgricultureResponse(message.text),
                         color = if (message.isUser) colorScheme.onPrimary else colorScheme.onSurfaceVariant,
                         modifier = Modifier.padding(horizontal = 14.dp, vertical = 10.dp),
                         fontSize = 15.sp
                     )
+
                 }
             }
         }

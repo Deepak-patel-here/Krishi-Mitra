@@ -1,7 +1,7 @@
 package com.midnightcoder.krishimitra.data.remote.service
 
-import com.midnightcoder.krishimitra.data.remote.dto.GeminiRequest
-import com.midnightcoder.krishimitra.data.remote.dto.GeminiResponse
+import com.midnightcoder.krishimitra.data.remote.dto.geminitext.GeminiRequest
+import com.midnightcoder.krishimitra.data.remote.dto.geminitext.GeminiResponse
 import retrofit2.http.Body
 import retrofit2.http.Header
 import retrofit2.http.POST
